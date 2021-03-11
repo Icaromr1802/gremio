@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h2> Calculadora</h2>
+    Primeiro número:
+    <input id="pri_numero"  type="pri_numero" placeholder="Primeiro Número"> <br></br>
+    Segundo Número:
+    <input id= "seg_numero" type= "seg_numero" placeholder="Segundo Número"> <br></br>
+
+    <button onclick="Subtrair()">Subtração</button>
+    <button onclick="Somar()">Adição</button>
+    <button onclick="Multiplicar()">Multiplicação</button>
+    <button onclick="Dividir()">Divisão</button>
+
+    <div id="Calcular">
+
+    </div>
+    
+</body>
+</html>
+
+<script>
+    function Subtrair() {
+        Calcular.innerHTML = `O resultado é: ${pri_numero.value - seg_numero.value}`; 
+    }
+    function Somar() {
+        Calcular.innerHTML = `O resultado é: ${Number(pri_numero.value) + Number(seg_numero.value)}`;
+    }
+    function Multiplicar(){
+        Calcular.innerHTML = `O resultado é: ${pri_numero.value * seg_numero.value}`; 
+    }
+    function Dividir(){
+        Calcular.innerHTML = `O resultado é: ${pri_numero.value / seg_numero.value}`;
+    }
+
+
+
+
+
+</script>

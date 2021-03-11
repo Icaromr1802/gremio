@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body> 
+    <h1> Cadastro</h1>
+  
+    Entre com o seu <b> Primeiro nome:</b> 
+    <input type="text" id="pri_nome" placeholder="primeiro nome">
+ <br>
+    Entre com seu <b>Ultimo nome</b>
+ <input id="seg_nome" placeholder="Segundo nome">
+<br>
+ <Button onclick="incluir()" style="background: blue;color: black;"> incluir</Button> 
+ <br>  
+ <div id="cadastro">
+     <H4>Mini Cadastro</H4>
+    </div>
+
+    
+</body>
+</html>
+
+<script>
+ function incluir(){     
+     cadastro.innerHTML = pri_nome.value+ ' '+seg_nome.value+ '<br>'
+     
+   
+
+ }
+</script>
